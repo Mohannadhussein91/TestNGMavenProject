@@ -66,7 +66,6 @@ public class SignupTests {
 	  Assert.assertTrue(signuppage.lastNameLabel.isDisplayed());
 	  Assert.assertEquals(signuppage.lastNameField.getAttribute("placeholder"), "Please Enter Your Last Name");
 
-
 	  //password field verfication
 	  Assert.assertTrue(signuppage.passwordLabel.isDisplayed());
 	  Assert.assertEquals(signuppage.passwordField.getAttribute("placeholder"), "Please Enter Your Password");
