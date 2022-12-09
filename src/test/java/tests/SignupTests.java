@@ -87,7 +87,6 @@ public class SignupTests {
 	  Assert.assertTrue(signuppage.signUpBtn.isDisplayed());
 	  Assert.assertTrue(signuppage.backToLogin.isDisplayed());
 	  
-	 
   }
   
   @AfterMethod (groups = "smoke-test")
