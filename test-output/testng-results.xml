@@ -1,127 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-01T17:20:29 MST" name="Default suite" finished-at="2022-12-01T17:21:12 MST" duration-ms="42688">
+  <suite started-at="2022-12-15T23:27:38 MST" name="Default suite" finished-at="2022-12-15T23:27:45 MST" duration-ms="6692">
     <groups>
     </groups>
-    <test started-at="2022-12-01T17:20:29 MST" name="Default test" finished-at="2022-12-01T17:21:12 MST" duration-ms="42688">
-      <class name="tests.AmazonSearch">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AmazonSearch@7995092a]" started-at="2022-12-01T17:20:29 MST" name="setup" finished-at="2022-12-01T17:20:31 MST" duration-ms="1978" status="PASS">
+    <test started-at="2022-12-15T23:27:38 MST" name="Default test" finished-at="2022-12-15T23:27:45 MST" duration-ms="6692">
+      <class name="petStoreApiTests.PetStoreApiTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:petStoreApiTests.PetStoreApiTests@3c9d0b9d]" started-at="2022-12-15T23:27:38 MST" name="setUp" finished-at="2022-12-15T23:27:38 MST" duration-ms="255" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="AmazonSearchTest(java.lang.String)[pri:0, instance:tests.AmazonSearch@7995092a]" started-at="2022-12-01T17:20:31 MST" name="AmazonSearchTest" data-provider="searchItems" finished-at="2022-12-01T17:20:36 MST" duration-ms="4884" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[coffee mug]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- setUp -->
+        <test-method signature="chainValidation()[pri:0, instance:petStoreApiTests.PetStoreApiTests@3c9d0b9d]" started-at="2022-12-15T23:27:38 MST" name="chainValidation" finished-at="2022-12-15T23:27:40 MST" duration-ms="1566" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AmazonSearchTest -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.AmazonSearch@7995092a]" started-at="2022-12-01T17:20:36 MST" name="quitDriver" finished-at="2022-12-01T17:20:36 MST" duration-ms="185" status="PASS">
+        </test-method> <!-- chainValidation -->
+        <test-method signature="createCatWithJsonFile()[pri:0, instance:petStoreApiTests.PetStoreApiTests@3c9d0b9d]" started-at="2022-12-15T23:27:40 MST" name="createCatWithJsonFile" finished-at="2022-12-15T23:27:40 MST" duration-ms="492" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- quitDriver -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AmazonSearch@7995092a]" started-at="2022-12-01T17:20:36 MST" name="setup" finished-at="2022-12-01T17:20:38 MST" duration-ms="1383" status="PASS">
+        </test-method> <!-- createCatWithJsonFile -->
+        <test-method signature="findPetByStatus()[pri:0, instance:petStoreApiTests.PetStoreApiTests@3c9d0b9d]" started-at="2022-12-15T23:27:40 MST" name="findPetByStatus" finished-at="2022-12-15T23:27:41 MST" duration-ms="465" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="AmazonSearchTest(java.lang.String)[pri:0, instance:tests.AmazonSearch@7995092a]" started-at="2022-12-01T17:20:38 MST" name="AmazonSearchTest" data-provider="searchItems" finished-at="2022-12-01T17:20:43 MST" duration-ms="5513" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pretty coffee mug]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- findPetByStatus -->
+        <test-method signature="invalidIdUpdateCat()[pri:0, instance:petStoreApiTests.PetStoreApiTests@3c9d0b9d]" started-at="2022-12-15T23:27:41 MST" name="invalidIdUpdateCat" finished-at="2022-12-15T23:27:41 MST" duration-ms="472" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AmazonSearchTest -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.AmazonSearch@7995092a]" started-at="2022-12-01T17:20:43 MST" name="quitDriver" finished-at="2022-12-01T17:20:43 MST" duration-ms="206" status="PASS">
+        </test-method> <!-- invalidIdUpdateCat -->
+        <test-method signature="postACat()[pri:0, instance:petStoreApiTests.PetStoreApiTests@3c9d0b9d]" started-at="2022-12-15T23:27:41 MST" name="postACat" finished-at="2022-12-15T23:27:42 MST" duration-ms="478" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- quitDriver -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AmazonSearch@7995092a]" started-at="2022-12-01T17:20:43 MST" name="setup" finished-at="2022-12-01T17:20:45 MST" duration-ms="1399" status="PASS">
+        </test-method> <!-- postACat -->
+        <test-method signature="postApet()[pri:0, instance:petStoreApiTests.PetStoreApiTests@3c9d0b9d]" started-at="2022-12-15T23:27:42 MST" name="postApet" finished-at="2022-12-15T23:27:42 MST" duration-ms="499" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="AmazonSearchTest(java.lang.String)[pri:0, instance:tests.AmazonSearch@7995092a]" started-at="2022-12-01T17:20:45 MST" name="AmazonSearchTest" data-provider="searchItems" finished-at="2022-12-01T17:20:50 MST" duration-ms="5056" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ugly coffee mug]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- postApet -->
+        <test-method signature="getPetById()[pri:0, instance:petStoreApiTests.PetStoreApiTests@3c9d0b9d]" started-at="2022-12-15T23:27:42 MST" name="getPetById" finished-at="2022-12-15T23:27:43 MST" depends-on-methods="petStoreApiTests.PetStoreApiTests.postApet" duration-ms="443" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AmazonSearchTest -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.AmazonSearch@7995092a]" started-at="2022-12-01T17:20:50 MST" name="quitDriver" finished-at="2022-12-01T17:20:50 MST" duration-ms="183" status="PASS">
+        </test-method> <!-- getPetById -->
+        <test-method signature="updatACat()[pri:0, instance:petStoreApiTests.PetStoreApiTests@3c9d0b9d]" started-at="2022-12-15T23:27:43 MST" name="updatACat" finished-at="2022-12-15T23:27:43 MST" depends-on-methods="petStoreApiTests.PetStoreApiTests.postACat" duration-ms="483" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- quitDriver -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AmazonSearch@7995092a]" started-at="2022-12-01T17:20:50 MST" name="setup" finished-at="2022-12-01T17:20:51 MST" duration-ms="1388" status="PASS">
+        </test-method> <!-- updatACat -->
+        <test-method signature="getById()[pri:0, instance:petStoreApiTests.PetStoreApiTests@3c9d0b9d]" started-at="2022-12-15T23:27:43 MST" name="getById" finished-at="2022-12-15T23:27:44 MST" depends-on-methods="petStoreApiTests.PetStoreApiTests.postACat, petStoreApiTests.PetStoreApiTests.updatACat" duration-ms="522" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="AmazonSearchTest(java.lang.String)[pri:0, instance:tests.AmazonSearch@7995092a]" started-at="2022-12-01T17:20:51 MST" name="AmazonSearchTest" data-provider="searchItems" finished-at="2022-12-01T17:20:57 MST" duration-ms="5666" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[gold coffee mug]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- getById -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:petStoreApiTests.PetStoreApiTests@3c9d0b9d]" started-at="2022-12-15T23:27:44 MST" name="cleanUp" finished-at="2022-12-15T23:27:45 MST" duration-ms="989" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AmazonSearchTest -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.AmazonSearch@7995092a]" started-at="2022-12-01T17:20:57 MST" name="quitDriver" finished-at="2022-12-01T17:20:57 MST" duration-ms="208" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AmazonSearch@7995092a]" started-at="2022-12-01T17:20:57 MST" name="setup" finished-at="2022-12-01T17:20:59 MST" duration-ms="1342" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="AmazonSearchTest(java.lang.String)[pri:0, instance:tests.AmazonSearch@7995092a]" started-at="2022-12-01T17:20:59 MST" name="AmazonSearchTest" data-provider="searchItems" finished-at="2022-12-01T17:21:04 MST" duration-ms="5158" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[argentina coffee mug]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AmazonSearchTest -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.AmazonSearch@7995092a]" started-at="2022-12-01T17:21:04 MST" name="quitDriver" finished-at="2022-12-01T17:21:04 MST" duration-ms="180" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AmazonSearch@7995092a]" started-at="2022-12-01T17:21:04 MST" name="setup" finished-at="2022-12-01T17:21:05 MST" duration-ms="1359" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="AmazonSearchTest(java.lang.String)[pri:0, instance:tests.AmazonSearch@7995092a]" started-at="2022-12-01T17:21:05 MST" name="AmazonSearchTest" data-provider="searchItems" finished-at="2022-12-01T17:21:12 MST" duration-ms="6389" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[funny coffee mug]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AmazonSearchTest -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.AmazonSearch@7995092a]" started-at="2022-12-01T17:21:12 MST" name="quitDriver" finished-at="2022-12-01T17:21:12 MST" duration-ms="171" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-      </class> <!-- tests.AmazonSearch -->
+        </test-method> <!-- cleanUp -->
+      </class> <!-- petStoreApiTests.PetStoreApiTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

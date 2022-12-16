@@ -1,0 +1,22 @@
+{
+    "id": 11223344,
+    "category": {
+      "id": 21,
+      "name": "Cat"
+    },
+    "name": "Momo",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 18,
+        "name": "persian"
+      },
+      {
+        "id": 2,
+        "name": "Anatolian"
+      }
+    ],
+    "status": "available"
+  }
