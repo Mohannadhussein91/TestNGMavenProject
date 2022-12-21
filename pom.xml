@@ -3,7 +3,10 @@
   <groupId>TestNGMavenProject</groupId>
   <artifactId>TestNGMavenProject</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
+  <properties>
+		<maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>11</maven.compiler.target>
+	</properties>
   
   <dependencies>
  <dependency>
@@ -38,6 +41,26 @@
 </dependency>
 
   </dependencies>
+  
+  <profiles>
+	<profile>
+			<id>ApiTests</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-surefire-plugin</artifactId>
+						<version>3.0.0-M5</version>
+						<configuration>
+							<suiteXmlFiles>
+								<suiteXmlFile>petApiTests.xml</suiteXmlFile>
+							</suiteXmlFiles>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
   
   
 </project>
