@@ -1,57 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+<testng-results ignored="1" total="5" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-15T23:27:38 MST" name="Default suite" finished-at="2022-12-15T23:27:45 MST" duration-ms="6692">
+  <suite started-at="2022-12-21T19:09:05 MST" name="Default suite" finished-at="2022-12-21T19:09:42 MST" duration-ms="36509">
     <groups>
     </groups>
-    <test started-at="2022-12-15T23:27:38 MST" name="Default test" finished-at="2022-12-15T23:27:45 MST" duration-ms="6692">
-      <class name="petStoreApiTests.PetStoreApiTests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:petStoreApiTests.PetStoreApiTests@3c9d0b9d]" started-at="2022-12-15T23:27:38 MST" name="setUp" finished-at="2022-12-15T23:27:38 MST" duration-ms="255" status="PASS">
+    <test started-at="2022-12-21T19:09:05 MST" name="Default test" finished-at="2022-12-21T19:09:42 MST" duration-ms="36509">
+      <class name="tests.CraterUserManagement">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CraterUserManagement@60dcc9fe]" started-at="2022-12-21T19:09:05 MST" name="setUp" finished-at="2022-12-21T19:09:09 MST" duration-ms="3557" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="chainValidation()[pri:0, instance:petStoreApiTests.PetStoreApiTests@3c9d0b9d]" started-at="2022-12-15T23:27:38 MST" name="chainValidation" finished-at="2022-12-15T23:27:40 MST" duration-ms="1566" status="PASS">
+        <test-method signature="invalidLogin(java.lang.String,java.lang.String)[pri:0, instance:tests.CraterUserManagement@60dcc9fe]" started-at="2022-12-21T19:09:09 MST" name="invalidLogin" data-provider="credential" finished-at="2022-12-21T19:09:15 MST" duration-ms="5994" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[husseinmohanad@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Wrongpassword]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- chainValidation -->
-        <test-method signature="createCatWithJsonFile()[pri:0, instance:petStoreApiTests.PetStoreApiTests@3c9d0b9d]" started-at="2022-12-15T23:27:40 MST" name="createCatWithJsonFile" finished-at="2022-12-15T23:27:40 MST" duration-ms="492" status="PASS">
+        </test-method> <!-- invalidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CraterUserManagement@60dcc9fe]" started-at="2022-12-21T19:09:15 MST" name="tearDown" finished-at="2022-12-21T19:09:15 MST" duration-ms="604" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createCatWithJsonFile -->
-        <test-method signature="findPetByStatus()[pri:0, instance:petStoreApiTests.PetStoreApiTests@3c9d0b9d]" started-at="2022-12-15T23:27:40 MST" name="findPetByStatus" finished-at="2022-12-15T23:27:41 MST" duration-ms="465" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CraterUserManagement@60dcc9fe]" started-at="2022-12-21T19:09:15 MST" name="setUp" finished-at="2022-12-21T19:09:18 MST" duration-ms="2582" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- findPetByStatus -->
-        <test-method signature="invalidIdUpdateCat()[pri:0, instance:petStoreApiTests.PetStoreApiTests@3c9d0b9d]" started-at="2022-12-15T23:27:41 MST" name="invalidIdUpdateCat" finished-at="2022-12-15T23:27:41 MST" duration-ms="472" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="invalidLogin(java.lang.String,java.lang.String)[pri:0, instance:tests.CraterUserManagement@60dcc9fe]" started-at="2022-12-21T19:09:18 MST" name="invalidLogin" data-provider="credential" finished-at="2022-12-21T19:09:25 MST" duration-ms="7166" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wrongemail@gkmfd.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password1234]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- invalidIdUpdateCat -->
-        <test-method signature="postACat()[pri:0, instance:petStoreApiTests.PetStoreApiTests@3c9d0b9d]" started-at="2022-12-15T23:27:41 MST" name="postACat" finished-at="2022-12-15T23:27:42 MST" duration-ms="478" status="PASS">
+        </test-method> <!-- invalidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CraterUserManagement@60dcc9fe]" started-at="2022-12-21T19:09:25 MST" name="tearDown" finished-at="2022-12-21T19:09:26 MST" duration-ms="653" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- postACat -->
-        <test-method signature="postApet()[pri:0, instance:petStoreApiTests.PetStoreApiTests@3c9d0b9d]" started-at="2022-12-15T23:27:42 MST" name="postApet" finished-at="2022-12-15T23:27:42 MST" duration-ms="499" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CraterUserManagement@60dcc9fe]" started-at="2022-12-21T19:09:26 MST" name="setUp" finished-at="2022-12-21T19:09:28 MST" duration-ms="2471" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- postApet -->
-        <test-method signature="getPetById()[pri:0, instance:petStoreApiTests.PetStoreApiTests@3c9d0b9d]" started-at="2022-12-15T23:27:42 MST" name="getPetById" finished-at="2022-12-15T23:27:43 MST" depends-on-methods="petStoreApiTests.PetStoreApiTests.postApet" duration-ms="443" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="invalidLogin(java.lang.String,java.lang.String)[pri:0, instance:tests.CraterUserManagement@60dcc9fe]" started-at="2022-12-21T19:09:28 MST" name="invalidLogin" data-provider="credential" finished-at="2022-12-21T19:09:33 MST" duration-ms="5037" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password1234]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getPetById -->
-        <test-method signature="updatACat()[pri:0, instance:petStoreApiTests.PetStoreApiTests@3c9d0b9d]" started-at="2022-12-15T23:27:43 MST" name="updatACat" finished-at="2022-12-15T23:27:43 MST" depends-on-methods="petStoreApiTests.PetStoreApiTests.postACat" duration-ms="483" status="PASS">
+        </test-method> <!-- invalidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CraterUserManagement@60dcc9fe]" started-at="2022-12-21T19:09:33 MST" name="tearDown" finished-at="2022-12-21T19:09:34 MST" duration-ms="588" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- updatACat -->
-        <test-method signature="getById()[pri:0, instance:petStoreApiTests.PetStoreApiTests@3c9d0b9d]" started-at="2022-12-15T23:27:43 MST" name="getById" finished-at="2022-12-15T23:27:44 MST" depends-on-methods="petStoreApiTests.PetStoreApiTests.postACat, petStoreApiTests.PetStoreApiTests.updatACat" duration-ms="522" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CraterUserManagement@60dcc9fe]" started-at="2022-12-21T19:09:34 MST" name="setUp" finished-at="2022-12-21T19:09:36 MST" duration-ms="2410" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getById -->
-        <test-method is-config="true" signature="cleanUp()[pri:0, instance:petStoreApiTests.PetStoreApiTests@3c9d0b9d]" started-at="2022-12-15T23:27:44 MST" name="cleanUp" finished-at="2022-12-15T23:27:45 MST" duration-ms="989" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="invalidLogin(java.lang.String,java.lang.String)[pri:0, instance:tests.CraterUserManagement@60dcc9fe]" started-at="2022-12-21T19:09:36 MST" name="invalidLogin" data-provider="credential" finished-at="2022-12-21T19:09:41 MST" duration-ms="4807" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wrongemail@gkmfd.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- cleanUp -->
-      </class> <!-- petStoreApiTests.PetStoreApiTests -->
+        </test-method> <!-- invalidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CraterUserManagement@60dcc9fe]" started-at="2022-12-21T19:09:41 MST" name="tearDown" finished-at="2022-12-21T19:09:42 MST" duration-ms="590" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.CraterUserManagement -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
