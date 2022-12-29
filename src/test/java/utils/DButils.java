@@ -12,7 +12,7 @@ import java.util.List;
 public class DButils {
 	
    private static String dbHostName = TestDataReader.getProperty("dbhosturl");
-     // we can separate them too example int portNumber = 3306;
+     // we can separate them too ,, example int portNumber = 3306;
    private static String username =TestDataReader.getProperty("dbusername");
    private static String password = TestDataReader.getProperty("dbpassword");
    
@@ -22,7 +22,7 @@ public class DButils {
    private ResultSet resultset;
    private ResultSetMetaData rsmd;
    
-   //this functin accepts a sql query and gets the record
+   //this function accepts a sql query and gets the record
     public List<String> selectArecord(String query){
 	   List<String> list = new ArrayList<>();
 	   try {
@@ -60,6 +60,21 @@ public class DButils {
    
    }
     
+    public void updateRecord(String updateQuery){
+	    try {
+		connection = DriverManager.getConnection(dbHostName,username,password);
+		System.out.println("DB connection established");
+		statement = connection.createStatement();
+		statement.executeUpdate(updateQuery);
+		connection.close();
+		
+	} catch (SQLException e) {
+		System.out.println("DB connection is not established");
+		e.printStackTrace();
+	}  
+   
+   }
+    
     
     public void deleteRecord(String deleteQuery){
 	    try {
@@ -80,22 +95,21 @@ public class DButils {
     
    
    
-   
-   public static void main(String[] args) {
-	   
-	   
-//	   DButils delete = new DButils();
-//	   List<String> newlist =delete.selectArecord("Select id,name,email,phone From customers where name='John Smith'");
-//	   System.out.println(newlist);
-//	   String query = "Select id,name,email,phone From customers where name='John Smith'";
+//   
+//   public static void main(String[] args) {
+//	   
+//	   String query = "Select id, name, email, phone From customers where name='John Smith'";
 //	   try {
 //		Connection connect = DriverManager.getConnection(dbHostName,username,password);
 //		System.out.println("Connection is successful");
 //		Statement statement = connect.createStatement();
 //		ResultSet resultset = statement.executeQuery(query);
-//		ResultSetMetaData rsmd = resultset.getMetaData();
+//     	ResultSetMetaData rsmd = resultset.getMetaData();
 //		
 //		resultset.next();
+//		
+//		System.out.println("First index is id: " + resultset.getString(1));
+//		System.out.println("Column name for 3rd column is: " + rsmd.getColumnName(3));
 //		
 //		System.out.println("column count is :" + rsmd.getColumnCount());
 //		
@@ -109,14 +123,12 @@ public class DButils {
 //		connect.close();
 //		
 //	} catch (SQLException e) {
-//		// TODO Auto-generated catch block
 //		e.printStackTrace();
 //	}
 //	
-  }
+//  }
 }  
-  
- 
+
  
  
 

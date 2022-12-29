@@ -2,6 +2,8 @@ package utils;
 
 
 
+import java.util.Random;
+
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
@@ -105,6 +107,13 @@ public class BrowserUtils {
 	public void clearTextOfAFieldMac(WebElement element) {
 		element.sendKeys(Keys.chord(Keys.COMMAND), "a");
 		element.sendKeys(Keys.DELETE);
+	}
+	
+	// random 3 digit number generator
+	public int randomNumber() {
+		Random rand = new Random();
+	    int randomNum = rand.nextInt((999-100) + 1) + 100;
+	    return randomNum;
 	}
 
 }
