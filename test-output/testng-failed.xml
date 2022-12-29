@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.CarterItemsTests">
+      <class name="tests.CraterUserManagement">
         <methods>
-          <include name="createItem"/>
+          <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="wrapup"/>
+          <include name="validLogin"/>
         </methods>
-      </class> <!-- tests.CarterItemsTests -->
+      </class> <!-- tests.CraterUserManagement -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
