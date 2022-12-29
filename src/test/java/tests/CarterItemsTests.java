@@ -11,7 +11,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import pages.CraterCommonPage;
-import pages.CraterDashboardPage;
 import pages.CraterItemsPage;
 import pages.CraterLoginPage;
 import utils.BrowserUtils;
@@ -72,7 +71,7 @@ public class CarterItemsTests {
 		utils.waitUntilElementVisible(itemsPage.itemCreateSuccessMessage);
 		Assert.assertTrue(itemsPage.itemCreateSuccessMessage.isDisplayed());
 		
-		WebElement newItem = Driver.getDriver().findElement(By.xpath("//a[text()='Argentina Jersy']"));
+		WebElement newItem = Driver.getDriver().findElement(By.xpath("//a[text()='"+newItemName+"']"));
 		Assert.assertTrue(newItem.isDisplayed());
 		
 		
@@ -85,8 +84,63 @@ public class CarterItemsTests {
 	    System.out.println("Item Name:" + itemsData.get(1));
 	    
 	    Assert.assertEquals(itemsData.get(1), newItemName);
+	    
+	    //Then update your item on the UI.
+	    //come back to database and verify the update is in effect.
+	    
+	    Driver.getDriver().findElement(By.xpath("//a[text()='"+newItemName+"']")).click();
+	    //verify that user on the edit item page
+	    Assert.assertTrue(itemsPage.editItemHeaderText.isDisplayed());
+	    //edit item description
+	    String itemNewDescription = "We Are The Champions of the world!";
+	    //first clear the existing text
+	    utils.clearTextOfAFieldMac(itemsPage.addItemDescription);
+	    //update with the updated text
+	    itemsPage.addItemDescription.sendKeys(itemNewDescription);
+	    //click on update item button
+	    itemsPage.updateItemButton.click();
+	    utils.waitUntilElementVisible(itemsPage.itemUpdatedSuccessMessage);
+	    //verify the message banner displays
+	    Assert.assertTrue(itemsPage.itemUpdatedSuccessMessage.isDisplayed());
+	    
+	    // Select query to get the item data from the DB
+	    String updatequery = "Select * From items Where name='"+newItemName+"'";
+	    List<String> updatedData = dbutils.selectArecord(query);
+	    System.out.println("Item Id: " + updatedData.get(0));
+	    System.out.println("Item Name:" + updatedData.get(1));
+	    System.out.println("Item Description: " + updatedData.get(2));
+	    //verify that the updated description match the expected
+	    Assert.assertEquals(updatedData.get(2), itemNewDescription);
+	    
+	    //Then delete the Item on the UI
+	    // come back to database and verify the item no longer exist.
+ Driver.getDriver().findElement(
+		By.xpath("(//a[text()='"+newItemName+"']//parent::td)//following-sibling::td[4]//button")).click();
+        
+        //click on the delete button
+		utils.waitUntilElementVisible(itemsPage.deleteItemButton);
+		itemsPage.deleteItemButton.click();
+		// wait for the Ok button to be visible
+		utils.waitUntilElementVisible(itemsPage.deleteOKButton);
+		// click on Ok button
+		itemsPage.deleteOKButton.click();
+		
+		// wait and verify the delete success message display
+		utils.waitUntilElementVisible(itemsPage.itemDeletedSuccessMessage);
+		Assert.assertTrue(itemsPage.itemDeletedSuccessMessage.isDisplayed());
 		
 		
+		// data base query and verify the list is empty
+		String deletedQuery = "SELECT * FROM items WHERE name='"+newItemName+"';";
+	    List<String> deletedData = dbutils.selectArecord(deletedQuery);
+		Assert.assertTrue(deletedData.isEmpty());
+		//either one of the assertion works
+		Assert.assertTrue(deletedData.size() == 0);
+ 
+ 
+	    
+	    
+	    
 	}
 
   

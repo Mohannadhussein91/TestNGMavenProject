@@ -4,6 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import utils.BrowserUtils;
 import utils.Driver;
 import utils.TestDataReader;
 
@@ -40,13 +41,20 @@ public class CraterLoginPage {
 	@FindBy (xpath = "//span[text()='Field is required']")
 	public WebElement fieldRequired;
 	
+	BrowserUtils utils;
 	
 	public void login() throws InterruptedException {
 		
-		  useremail.sendKeys(TestDataReader.getProperty("craterValidUserEmail"));
-		  Thread.sleep(1000);
-		  password.sendKeys(TestDataReader.getProperty("craterValidPassword"));
-		  loginButton.click();
+//		  useremail.sendKeys(TestDataReader.getProperty("craterValidUserEmail"));
+//		  Thread.sleep(1000);
+//		  password.sendKeys(TestDataReader.getProperty("craterValidPassword"));
+//		  loginButton.click();
+		// this way to make it work with chrome using Action
+		utils = new BrowserUtils();
+		utils.sendKeysWithActionsClass(useremail, TestDataReader.getProperty("craterValidUserEmail"));
+		Thread.sleep(1000);
+		utils.sendKeysWithActionsClass(password, TestDataReader.getProperty("craterValidPassword"));
+		loginButton.click();
 	}
 	
 

@@ -18,6 +18,7 @@ import org.testng.annotations.AfterMethod;
 
 public class CraterUserManagement {
 	
+	BrowserUtils utils;
   @Test
   public void validLogin() throws InterruptedException {
 	  /*
@@ -30,10 +31,15 @@ public class CraterUserManagement {
 	  Driver.getDriver().get(TestDataReader.getProperty("craterUrl"));
 	  CraterLoginPage loginpage = new CraterLoginPage();
 	  Thread.sleep(1000);
-	  loginpage.useremail.sendKeys(TestDataReader.getProperty("craterValidUserEmail"));
-	  Thread.sleep(1000);
-	  loginpage.password.sendKeys(TestDataReader.getProperty("craterValidPassword"));
-	  loginpage.loginButton.click();
+	  loginpage.login();
+	  //this way for chrome to fix the issue with sending key problem by using the Action instead
+//	  utils = new BrowserUtils();
+//	  utils.sendKeysWithActionsClass(loginpage.useremail,TestDataReader.getProperty("craterValidUserEmail"));
+//	 // loginpage.useremail.sendKeys(TestDataReader.getProperty("craterValidUserEmail"));
+//	  Thread.sleep(1000);
+//	  utils.sendKeysWithActionsClass(loginpage.password,TestDataReader.getProperty("craterValidPassword"));
+//	 // loginpage.password.sendKeys(TestDataReader.getProperty("craterValidPassword"));
+//	  loginpage.loginButton.click();
 	  
 	  CraterDashboardPage dashboard = new CraterDashboardPage();
 	  //this is the first way to verify we are on the dash board page
