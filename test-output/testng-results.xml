@@ -1,25 +1,203 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="11" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-29T01:56:34 MST" name="Default suite" finished-at="2022-12-29T01:57:03 MST" duration-ms="29328">
+  <suite started-at="2022-12-30T00:52:01 MST" name="Default suite" finished-at="2022-12-30T00:52:47 MST" duration-ms="46692">
     <groups>
     </groups>
-    <test started-at="2022-12-29T01:56:34 MST" name="Default test" finished-at="2022-12-29T01:57:03 MST" duration-ms="29328">
-      <class name="tests.CarterItemsTests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CarterItemsTests@358ee631]" started-at="2022-12-29T01:56:34 MST" name="setUp" finished-at="2022-12-29T01:56:45 MST" duration-ms="10540" status="PASS">
+    <test started-at="2022-12-30T00:52:01 MST" name="Default test" finished-at="2022-12-30T00:52:47 MST" duration-ms="46692">
+      <class name="tests.AmazonSearchWithExcel">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AmazonSearchWithExcel@45018215]" started-at="2022-12-30T00:52:01 MST" name="setup" finished-at="2022-12-30T00:52:02 MST" duration-ms="1154" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="createItem()[pri:0, instance:tests.CarterItemsTests@358ee631]" started-at="2022-12-29T01:56:45 MST" name="createItem" finished-at="2022-12-29T01:57:03 MST" duration-ms="18164" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="AmazonSearchTest(java.lang.String)[pri:0, instance:tests.AmazonSearchWithExcel@45018215]" started-at="2022-12-30T00:52:02 MST" name="AmazonSearchTest" data-provider="searchItem" finished-at="2022-12-30T00:52:07 MST" duration-ms="4476" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Aleheida]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createItem -->
-        <test-method is-config="true" signature="wrapup()[pri:0, instance:tests.CarterItemsTests@358ee631]" started-at="2022-12-29T01:57:03 MST" name="wrapup" finished-at="2022-12-29T01:57:03 MST" duration-ms="597" status="PASS">
+        </test-method> <!-- AmazonSearchTest -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.AmazonSearchWithExcel@45018215]" started-at="2022-12-30T00:52:07 MST" name="quitDriver" finished-at="2022-12-30T00:52:07 MST" duration-ms="123" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- wrapup -->
-      </class> <!-- tests.CarterItemsTests -->
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AmazonSearchWithExcel@45018215]" started-at="2022-12-30T00:52:07 MST" name="setup" finished-at="2022-12-30T00:52:08 MST" duration-ms="670" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="AmazonSearchTest(java.lang.String)[pri:0, instance:tests.AmazonSearchWithExcel@45018215]" started-at="2022-12-30T00:52:08 MST" name="AmazonSearchTest" data-provider="searchItem" finished-at="2022-12-30T00:52:11 MST" duration-ms="3653" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[pretty coffee mug]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AmazonSearchTest -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.AmazonSearchWithExcel@45018215]" started-at="2022-12-30T00:52:11 MST" name="quitDriver" finished-at="2022-12-30T00:52:11 MST" duration-ms="121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AmazonSearchWithExcel@45018215]" started-at="2022-12-30T00:52:11 MST" name="setup" finished-at="2022-12-30T00:52:12 MST" duration-ms="622" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="AmazonSearchTest(java.lang.String)[pri:0, instance:tests.AmazonSearchWithExcel@45018215]" started-at="2022-12-30T00:52:12 MST" name="AmazonSearchTest" data-provider="searchItem" finished-at="2022-12-30T00:52:16 MST" duration-ms="3568" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ugly coffee mug]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AmazonSearchTest -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.AmazonSearchWithExcel@45018215]" started-at="2022-12-30T00:52:16 MST" name="quitDriver" finished-at="2022-12-30T00:52:16 MST" duration-ms="120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AmazonSearchWithExcel@45018215]" started-at="2022-12-30T00:52:16 MST" name="setup" finished-at="2022-12-30T00:52:16 MST" duration-ms="618" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="AmazonSearchTest(java.lang.String)[pri:0, instance:tests.AmazonSearchWithExcel@45018215]" started-at="2022-12-30T00:52:16 MST" name="AmazonSearchTest" data-provider="searchItem" finished-at="2022-12-30T00:52:20 MST" duration-ms="3701" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[big coffee mug]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AmazonSearchTest -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.AmazonSearchWithExcel@45018215]" started-at="2022-12-30T00:52:20 MST" name="quitDriver" finished-at="2022-12-30T00:52:20 MST" duration-ms="125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AmazonSearchWithExcel@45018215]" started-at="2022-12-30T00:52:20 MST" name="setup" finished-at="2022-12-30T00:52:21 MST" duration-ms="614" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="AmazonSearchTest(java.lang.String)[pri:0, instance:tests.AmazonSearchWithExcel@45018215]" started-at="2022-12-30T00:52:21 MST" name="AmazonSearchTest" data-provider="searchItem" finished-at="2022-12-30T00:52:25 MST" duration-ms="3978" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[small coffee mug]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AmazonSearchTest -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.AmazonSearchWithExcel@45018215]" started-at="2022-12-30T00:52:25 MST" name="quitDriver" finished-at="2022-12-30T00:52:25 MST" duration-ms="125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AmazonSearchWithExcel@45018215]" started-at="2022-12-30T00:52:25 MST" name="setup" finished-at="2022-12-30T00:52:26 MST" duration-ms="621" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="AmazonSearchTest(java.lang.String)[pri:0, instance:tests.AmazonSearchWithExcel@45018215]" started-at="2022-12-30T00:52:26 MST" name="AmazonSearchTest" data-provider="searchItem" finished-at="2022-12-30T00:52:29 MST" duration-ms="3654" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[gold coffee mug]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AmazonSearchTest -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.AmazonSearchWithExcel@45018215]" started-at="2022-12-30T00:52:29 MST" name="quitDriver" finished-at="2022-12-30T00:52:29 MST" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AmazonSearchWithExcel@45018215]" started-at="2022-12-30T00:52:29 MST" name="setup" finished-at="2022-12-30T00:52:30 MST" duration-ms="622" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="AmazonSearchTest(java.lang.String)[pri:0, instance:tests.AmazonSearchWithExcel@45018215]" started-at="2022-12-30T00:52:30 MST" name="AmazonSearchTest" data-provider="searchItem" finished-at="2022-12-30T00:52:34 MST" duration-ms="3772" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[silver coffee mug]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AmazonSearchTest -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.AmazonSearchWithExcel@45018215]" started-at="2022-12-30T00:52:34 MST" name="quitDriver" finished-at="2022-12-30T00:52:34 MST" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AmazonSearchWithExcel@45018215]" started-at="2022-12-30T00:52:34 MST" name="setup" finished-at="2022-12-30T00:52:34 MST" duration-ms="619" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="AmazonSearchTest(java.lang.String)[pri:0, instance:tests.AmazonSearchWithExcel@45018215]" started-at="2022-12-30T00:52:34 MST" name="AmazonSearchTest" data-provider="searchItem" finished-at="2022-12-30T00:52:38 MST" duration-ms="3933" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[argentina coffee mug]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AmazonSearchTest -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.AmazonSearchWithExcel@45018215]" started-at="2022-12-30T00:52:38 MST" name="quitDriver" finished-at="2022-12-30T00:52:39 MST" duration-ms="125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AmazonSearchWithExcel@45018215]" started-at="2022-12-30T00:52:39 MST" name="setup" finished-at="2022-12-30T00:52:39 MST" duration-ms="612" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="AmazonSearchTest(java.lang.String)[pri:0, instance:tests.AmazonSearchWithExcel@45018215]" started-at="2022-12-30T00:52:39 MST" name="AmazonSearchTest" data-provider="searchItem" finished-at="2022-12-30T00:52:43 MST" duration-ms="3756" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[funny coffee mug]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AmazonSearchTest -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.AmazonSearchWithExcel@45018215]" started-at="2022-12-30T00:52:43 MST" name="quitDriver" finished-at="2022-12-30T00:52:43 MST" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AmazonSearchWithExcel@45018215]" started-at="2022-12-30T00:52:43 MST" name="setup" finished-at="2022-12-30T00:52:44 MST" duration-ms="589" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="AmazonSearchTest(java.lang.String)[pri:0, instance:tests.AmazonSearchWithExcel@45018215]" started-at="2022-12-30T00:52:44 MST" name="AmazonSearchTest" data-provider="searchItem" finished-at="2022-12-30T00:52:47 MST" duration-ms="3711" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cool coffee mug]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AmazonSearchTest -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.AmazonSearchWithExcel@45018215]" started-at="2022-12-30T00:52:47 MST" name="quitDriver" finished-at="2022-12-30T00:52:47 MST" duration-ms="130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- tests.AmazonSearchWithExcel -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
