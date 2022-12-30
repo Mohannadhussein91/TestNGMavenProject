@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="RegressionTest">
+	<test name="UI-RegressionTests">
+		<classes>
+			<class name="tests.SignupTests"></class>
+			<class name="tests.AmazonSearch"></class>
+			<class name="tests.AmazonSearchWithExcel"></class>
+			<class name="tests.CraterItemsTests"></class>
+			<class name="tests.CraterUserManagement"></class>
+			<class name="tests.SauceDemoLoginTests"></class>
+		</classes>
+	</test>
+</suite>
