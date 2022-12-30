@@ -7,7 +7,7 @@
 			<class name="tests.SignupTests"></class>
 			<class name="tests.AmazonSearch"></class>
 			<class name="tests.AmazonSearchWithExcel"></class>
-			<class name="tests.CraterItemsTests"></class>
+			<class name="tests.CarterItemsTests"></class>
 			<class name="tests.CraterUserManagement"></class>
 			<class name="tests.SauceDemoLoginTests"></class>
 		</classes>
